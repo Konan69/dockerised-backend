@@ -1,12 +1,12 @@
 const express = require('express')
 const pool = require("./db")
-const port = 1337
+const port = 3000
 
 
 const app = express()
 
 app.get('/', (req, res) => {
-  res.status(200)
+  res.sendStatus(200)
 })
 
 
